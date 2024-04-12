@@ -1,0 +1,35 @@
+﻿@model Student
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add toys</title>
+    <link rel="icon" href="eld.icon">
+   @* <link rel="stylesheet" href="css/style.css">*@
+    <link rel="stylesheet" href="~/css/AddForm.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/all.min.css">
+
+</head>
+<section class="contact" id="contact">
+<div class="contact-form">
+    <form asp-controller="Student" asp-action="Save">
+
+        <label asp-for="Id"></label>
+        <input asp-for="Id" />
+
+        <label asp-for="Name"></label>
+        <input asp-for="Name" />
+
+        <label asp-for="Age"></label>
+        <input asp-for="Age" />
+
+        <label asp-for="DepartmentId"></label>
+        <input asp-for="DepartmentId" />
+
+
+        <input type="submit" />
+    </form>
+
+</div>
+</section>
